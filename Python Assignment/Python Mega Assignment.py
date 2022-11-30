@@ -293,16 +293,87 @@
 
 # Coding problems
 # Q76. Write a Python program to find the factorial of a given number.
+# A76.
+# num = int(input("Enter number: "))
+# fact = 1
+# if num < 0:
+#     print("not possible")
+# elif num==1 or num ==0:
+#     print(1)
+# else:
+#     for i in range(1,num+1):
+#         fact = fact * i
+#     print(fact)
+
 
 # Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (PRT)/100
+
 
 # Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
 
 # Q79. Write a Python program to check if a number is prime or not.
+# A79.
+# from math import sqrt
+# num = int(input("Enter Number: "))
+# numsq = int(sqrt(num))+1
+
+# flag = 1
+# #prime number are grater than 1
+
+# if num > 1:
+    
+# # every num is in table of one o we start with 2 
+# # and if num is not prime it will get divided by atleast one number lower that itself and Prime number also come in heir table.    
+#     for i in range(2,numsq): 
+        
+#         if num % i == 0:
+#             print(num % i == 0)
+#             flag = 0
+#             break
+#     if flag == 1:
+#         print("Prime")
+#     else:
+#         print("Not Prime")
+# else:
+#     print("Prime Numbers are greater than 1")
+
+
+
+        
+        
+
 
 # Q80. Write a Python program to check Armstrong Number.
+# num =int(input("Enter Number: "))
+# order = len(str(num))
+# sum = 0
+# temp = num
+# while temp > 0:
+#     digit = temp % 10
+#     sum += digit ** order
+#     temp //= 10
+# if sum == num:
+#     print("Armstrong Number")
+# else:
+#     print("Not Armstrong Number")
+
+
+
+
 
 # Q81. Write a Python program to find the n-th Fibonacci Number.
+n_th = int(input("Enter n: "))
+if n_th < 0:
+    print("Invalid")
+elif n_th == 0:
+    print(0)
+elif n_th == 1:
+    print(1)
+else:
+    sum = 1
+    for i in range(1,n_th):
+        sum += i
+    print(n_th," number is ",sum)
 
 # Q82. Write a Python program to interchange the first and last element in a list.
 
